@@ -1,0 +1,74 @@
+/* Redesigned Memory Match Page for React Vite */
+
+.memory-match-container {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #f0f0f0, #1f2021);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.memory-card {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #e0e0e0, #464141);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+  box-shadow: 3px 3px 6px #ccc, -3px -3px 6px #161616;
+}
+
+.memory-card:hover {
+  box-shadow: 5px 5px 10px #292828, -5px -5px 10px #fff;
+}
+
+.memory-card.flipped {
+  background: #4caf50;
+  color: white;
+  transform: rotateY(180deg);
+  box-shadow: 3px 3px 6px #4caf50, -3px -3px 6px #fff;
+}
+
+.card-content {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.restart-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ff4757;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.restart-button:hover {
+  background-color: #e84118;
+  transform: scale(1.05);
+}

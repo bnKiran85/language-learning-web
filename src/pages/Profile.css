@@ -1,0 +1,176 @@
+.profile-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  color: #333;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #2d72e0, #052152) !important;
+  color: white !important;
+}
+
+.profile-container {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+}
+
+.profile-header {
+  margin-bottom: 2rem;
+}
+
+.profile-card {
+  position: relative;
+  overflow: visible !important;
+}
+
+.profile-cover-photo {
+  height: 120px;
+  background: linear-gradient(135deg, #5385e1, #021e48);
+  position: relative;
+}
+
+.profile-avatar-container {
+  position: absolute;
+  top: 130px;
+  left: 30px;
+}
+
+.profile-avatar {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-edit-button {
+  background-color: white !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+}
+
+.profile-info-container {
+  padding-top: 70px;
+}
+
+.profile-details {
+  margin-left: 150px;
+}
+
+/* Tab styling */
+.MuiTabs-root {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.MuiTab-root {
+  min-height: 60px;
+  transition: all 0.3s ease;
+}
+
+.MuiTab-root.Mui-selected {
+  color: #b7c7e4;
+  font-weight: bold;
+}
+
+/* Card animations */
+.MuiCard-root {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Achievement card styling */
+.achievement-card.completed {
+  border: 2px solid #4caf50;
+}
+
+.achievement-badge {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Language card styling */
+.language-card:hover {
+  border-color: #1e3c72;
+}
+
+/* Stat box styling */
+.stat-box {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.02);
+  height: 100%;
+}
+
+/* Animation for tab panels */
+.MuiTabPanel-root {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 960px) {
+  .profile-container {
+    padding: 1rem;
+  }
+  
+  .profile-avatar-container {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .profile-details {
+    margin-left: 0;
+    text-align: center;
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-cover-photo {
+    height: 140px;
+  }
+  
+  .profile-avatar-container {
+    top: 90px;
+  }
+  
+  .profile-avatar {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  
+  .profile-info-container {
+    padding-top: 60px;
+  }
+  
+  .profile-header {
+    text-align: center;
+  }
+  
+  .MuiTab-root {
+    min-width: auto;
+    padding: 12px;
+  }
+}

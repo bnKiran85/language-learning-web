@@ -1,0 +1,145 @@
+/* General styles for the page */
+.listening-challenge-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+}
+
+/* Glass card effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Progress bar styles */
+.progress-bar {
+  height: 10px;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+}
+
+.progress-bar .MuiLinearProgress-bar {
+  border-radius: 5px;
+}
+
+/* Animated button styles */
+.animated-button {
+  transition: all 0.3s ease;
+}
+
+.animated-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.animated-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Text field styles */
+.text-field {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.text-field .MuiOutlinedInput-root {
+  border-radius: 8px;
+}
+
+/* Snackbar styles */
+.snackbar {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .listening-challenge-page {
+      padding: 10px;
+  }
+
+  .glass-card {
+      padding: 16px;
+  }
+
+  .text-field {
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .glass-card {
+      padding: 12px;
+  }
+
+  .animated-button {
+      width: 100%;
+  }
+}
+
+/* App bar styles */
+.app-bar {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Speed dial styles */
+.speed-dial {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Dialog styles */
+.dialog-title {
+  background-color: #1976d2;
+  color: #fff;
+  padding: 16px;
+  border-radius: 8px 8px 0 0;
+}
+
+.dialog-content {
+  padding: 20px;
+}
+
+.dialog-actions {
+  padding: 16px;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Chip styles */
+.chip {
+  margin: 4px;
+  font-weight: bold;
+}
+
+/* Divider styles */
+.divider {
+  margin: 16px 0;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Skeleton styles */
+.skeleton {
+  border-radius: 8px;
+}

@@ -1,0 +1,262 @@
+/* src/pages/Settings.css */
+
+.settings-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  color: #333;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #1e3c72, #2a5298) !important;
+  color: white !important;
+}
+
+.settings-container {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+}
+
+.settings-header {
+  margin-bottom: 2rem;
+}
+
+.settings-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Tab styling */
+.MuiTabs-root {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.MuiTab-root {
+  min-height: 60px;
+  transition: all 0.3s ease;
+}
+
+.MuiTab-root.Mui-selected {
+  color: #1e3c72;
+  font-weight: bold;
+}
+
+/* Card animations */
+.MuiCard-root {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Switch styling */
+.MuiSwitch-root.Mui-checked {
+  color: #1e3c72;
+}
+
+.MuiSwitch-track.Mui-checked {
+  background-color: #1e3c72 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .settings-actions {
+    flex-direction: column;
+  }
+  
+  .settings-actions button {
+    width: 100%;
+  }
+}
+
+/* Animation for tab panels */
+.MuiTabPanel-root {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form controls styling */
+.MuiFormControl-root {
+  margin-bottom: 16px;
+}
+
+.MuiInputLabel-root {
+  color: #555;
+}
+
+.MuiOutlinedInput-root {
+  border-radius: 8px;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #1e3c72;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #1e3c72;
+  border-width: 2px;
+}
+
+/* Slider styling */
+.MuiSlider-root {
+  color: #1e3c72;
+}
+
+.MuiSlider-thumb {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.MuiSlider-valueLabel {
+  background-color: #1e3c72;
+}
+
+/* Alert styling */
+.MuiAlert-root {
+  border-radius: 8px;
+}
+
+.MuiAlert-standardInfo {
+  background-color: rgba(33, 150, 243, 0.1);
+  border: 1px solid rgba(33, 150, 243, 0.3);
+}
+
+.MuiAlert-standardSuccess {
+  background-color: rgba(76, 175, 80, 0.1);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+/* Chip styling */
+.MuiChip-root {
+  border-radius: 16px;
+  transition: all 0.2s ease;
+}
+
+.MuiChip-root:hover {
+  transform: scale(1.05);
+}
+
+.MuiChip-root.MuiChip-colorPrimary {
+  background: linear-gradient(45deg, #1e3c72, #2a5298);
+}
+
+/* Button styling */
+.MuiButton-contained {
+  transition: all 0.3s ease;
+}
+
+.MuiButton-contained:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.MuiButton-outlined {
+  transition: all 0.3s ease;
+}
+
+.MuiButton-outlined:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .settings-page[data-theme="system"] {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #f0f0f0;
+  }
+  
+  .settings-page[data-theme="system"] .MuiCard-root,
+  .settings-page[data-theme="system"] .MuiTabs-root {
+    background-color: #242535;
+    color: #f0f0f0;
+  }
+  
+  .settings-page[data-theme="system"] .MuiTypography-root {
+    color: #f0f0f0;
+  }
+  
+  .settings-page[data-theme="system"] .MuiTypography-colorTextSecondary {
+    color: #b0b0b0;
+  }
+}
+
+/* Drawer styling */
+.MuiDrawer-paper {
+  background: linear-gradient(180deg, #f8f9fa, #e9ecef);
+}
+
+.MuiListItem-button {
+  border-radius: 8px;
+  margin: 4px 8px;
+  transition: all 0.2s ease;
+}
+
+.MuiListItem-button:hover {
+  background-color: rgba(30, 60, 114, 0.08);
+}
+
+.MuiListItem-button.Mui-selected {
+  background-color: rgba(30, 60, 114, 0.12);
+}
+
+.MuiListItem-button.Mui-selected:hover {
+  background-color: rgba(30, 60, 114, 0.18);
+}
+
+/* Snackbar styling */
+.MuiSnackbar-root {
+  bottom: 24px;
+}
+
+.MuiAlert-standardSuccess {
+  background-color: #4caf50;
+  color: white;
+}
+
+.MuiAlert-standardInfo {
+  background-color: #2196f3;
+  color: white;
+}
+
+.MuiAlert-standardWarning {
+  background-color: #ff9800;
+  color: white;
+}
+
+.MuiAlert-standardError {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 960px) {
+  .settings-container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .settings-header {
+    text-align: center;
+  }
+  
+  .MuiTab-root {
+    min-width: auto;
+    padding: 12px;
+  }
+}

@@ -1,0 +1,38 @@
+/* Leaderboard.css */
+.leaderboard-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.app-header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-container {
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+
+.leaderboard-header {
+  margin-bottom: 32px;
+}
+
+.search-filter-bar {
+  margin-bottom: 24px;
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
